@@ -1,61 +1,53 @@
 # FrontEndTest
 
 
-A continuacion se plantean las condiciones para realizar la prueba:
+##__Las siguientes son las condiciones para realizar la prueba:
 
-1) Tener cuenta en github (gratis)
+1. Tener cuenta en Github (gratis)
 
-2) Clonar repositorio: HTTPS: https://github.com/LotoPuntoProject/FrontEndTest.git
-SSH: git@github.com:LotoPuntoProject/FrontEndTest.git
+2. Clonar el siguiente repositorio: HTTPS: https://github.com/LotoPuntoProject/FrontEndTest.git SSH:git@github.com:LotoPuntoProject/FrontEndTest.git
 
-3) Crear branch donde ira todo el codigo desarrollado, el nombre del branch sera:
- {$nombre}_lotopunto  ($nombre = Primer.nombrePrimer.apellido, ej: CarlosRuiz_lotopunto)
+3. Crear branch donde será subido todo el código desarrollado. El nombre del branch será: {$nombre}_lotopunto ($nombre = PrimernombrePrimerapellido, ej: CarlosRuiz_lotopunto)
 
-4) El tiempo que tendran para hacer el desarrollo sera de 12h
+4. Subir todo el codigo necesario para la compilacion correcta del aplicativo, asi como sus requerimientos y un README describiendo el orden de ejecucion.
 
-5) Se tendra muy en cuenta la presentacion fisica (Estetica, htlm, CSS) y funcionalidad
+5. El tiempo límite para subir el código funcional será de 24 horas a partir de la recepción del email con la prueba.
 
-6) A la hora de revisar se tendra cuenta el ultimo push hecho antes de concluir con el tiempo de realizacion(12h).
+6. Adicionalmente a los requerimientos funcionales, se tendrá en cuenta: la presentación física del aplicativo (Estética, HTML, CSS), usabilidad y legibilidad en inglés (comentarios, indentación y organización) del código fuente, así como su robustez.
 
-7) no olvidar hacer PUSH.
+7. En el momento de evaluar se tendrá en cuenta el último “push” previo a concluir el plazo para subir el código.
 
-8) cualquier pregunta al correo raosoriom.lotopunto@gmail.com
+8. Cualquier pregunta sobre esta prueba será dirigida y respondida vía email a raosoriom.lotopunto@gmail.com, en horario de 17 de Abril 5:00 PM a 11:00 PM y 18 de Abril 9:00 AM a 2:00 PM.
 
-IMPORTANTE!!!!
-Solo se revisa el desarrollo que se encuentre en el branch respectivo y antes que concluya el tiempo, no olvidar hacer push..
+9. Sólamente se revisará el desarrollo que se encuentre en el branch respectivo y antes que concluya el tiempo. No olvidar hacer push.
+
+10. Generar “Class Diagram” del código fuente y “Use Case Diagram” en versión UML 2.0 en idioma inglés (formato PDF). Subirlos [aqui:](https://docs.google.com/forms/d/1FAhqnX6IQ5Wgirs_he8SHZ5ux4ZBtUFNi9vPkITnLls/)
 
 
-Desarrollo FrontEnd
+##__Requerimientos Funcionales FrontEnd__
 
-Desarrollo de una aplicacion web FrontEnd, se podra usar cualquier framework para el desarrollo (react, Angular, Redux...), 
-el desarrollo sera basado en API_REST, sera un desarrollo local en el puerto 3000  localhost:3000
+Desarrollo de una aplicación web FrontEnd.
 
-Se crearan 3 vistas explicadas a continuacion
+El desarrollador podrá usar cualquier framework para el desarrollo (React, Angular, Redux...).
 
-1) La primera sera una vista de bienvenida(Sentirse libre y creativo a la hora de hacerla) y adicional mostrar
-un cuadro de login con dos labels: usuario y contrasena, y dos botones: 
-Sign up (click)-> llevara a la 2) vista 
-Login (click)-> validara usuario y contrasena haciendo post a localhost:3001/login y en el body la siguiente informacion: 
-{
-    "user": $user,
-    "password": $password
-}
-Respuesta:
-200 ok: llevar a la vista 3)
-404 not found: Mostrar mensaje de usurio y contrasena erronea
+El desarrollo estará basado en API_REST.
 
-2) Sera una vista de registro donde se solicitara cierta informacion(user, password, mail) al usuario y tendra un boton:
-Sign Up (click)-> Este boton recolecta la informacion solicitada y realiza post a localhost:3001/signup y en el body ira 
-la informacion recolectada en formato json.
-Respuesta:
-200 ok: sign up exitoso y redirige  la vista 1)
-400 bad Request: Error 
+Será un desarrollo local en el puerto 3000 localhost:3000
 
-3) Esta vista mostrata un mensaje de login correcto y mostrara una informacion recolectada al hacer un get a localhost:3001/$user/info
-la informacion recolectada al hacer el get debe ser expuesta en esta vista y vendra en formato json:
-{
-    "user": string,
-    "cash": int,
-    "meta": list
-}
+Se crearán 3 vistas explicadas a continuación:
 
+1) La primera será una vista de bienvenida (Sentirse libre y creativo a la hora de hacerla). Al usuario final se desplegará un cuadro de login con dos campos: usuario y contraseña. El cuadro de login tendrá dos botones:
+
+Sign up (click)-> llevará a la 2) vista
+
+Login (click)-> Validación de usuario y contraseña haciendo POST a localhost:3001/login y en el body la siguiente información: { "user": $user, "password": $password } Respuesta: 200 ok: Redirige a la vista 3)
+
+En caso de credenciales no válidas (equivalente a respuesta “404 not found”), se mostrará en pantalla un mensaje de usuario y/o contraseña incorrecta. El usuario podrá volver a intentar hacer Login.
+
+2) Una vista de registro donde se solicitará al usuario user, password y email. Esta vista tendrá un botón: Sign Up (click)-> Este botón recolecta la información solicitada y realiza post a localhost:3001/signup
+
+En el body ira la información recolectada en formato JSON. Respuesta: 200 ok: sign up exitoso y redirige a la vista 1) 400 bad Request: Error
+
+3) Una vista de login exitoso. Esta vista mostrará un mensaje en pantalla de login ejecutado correctamente, con la información recolectada al hacer un GET a localhost:3001/$user/info
+
+La información recolectada al hacer el GET debe ser mostrada en pantalla en esta vista y vendrá en formato JSON: { "user": string, "cash": int, "meta": list }
