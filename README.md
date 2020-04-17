@@ -1,7 +1,7 @@
 # FrontEndTest
 
 
-##__Las siguientes son las condiciones para realizar la prueba:
+## Las siguientes son las condiciones para realizar la prueba:
 
 1. Tener cuenta en Github (gratis)
 
@@ -24,7 +24,7 @@
 10. Generar “Class Diagram” del código fuente y “Use Case Diagram” en versión UML 2.0 en idioma inglés (formato PDF). Subirlos [aqui:](https://docs.google.com/forms/d/1FAhqnX6IQ5Wgirs_he8SHZ5ux4ZBtUFNi9vPkITnLls/)
 
 
-##__Requerimientos Funcionales FrontEnd__
+## Requerimientos Funcionales FrontEnd
 
 Desarrollo de una aplicación web FrontEnd.
 
