@@ -1,53 +1,98 @@
-# FrontEndTest
+# ngx-admin [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />](https://hubs.ly/H0n4ZDy0) [![Build Status](https://travis-ci.org/akveo/ngx-admin.svg?branch=master)](https://travis-ci.org/akveo/ngx-admin) [![Dependency Status](https://david-dm.org/akveo/ngx-admin/status.svg)](https://david-dm.org/akveo/ng2-admin)
+
+[Who uses ngx-admin?](https://github.com/akveo/ngx-admin/issues/1645)| [Documentation](https://hubs.ly/H0n4Sfq0) | [Installation Guidelines](https://hubs.ly/H0n4Svc0)
+
+# New! Material theme for ngx-admin
+
+### Material admin theme is based on the most popular Angular dashboard template - [ngx-admin](https://hubs.ly/H0nJG1G0)
+### Included: Angular 9+, [Nebular](https://hubs.ly/H0nJG5g0) and [Eva design system](https://hubs.ly/H0nJGdC0). Free for personal and commercial usage.
+### Get material ngx-admin integrated with backend technology of your choice. [Check out our store](https://hubs.ly/H0n4Zvy0).
+
+<a target="_blank" href="https://hubs.ly/H0nxM3b0"><img src="https://i.imgur.com/67YAlhf.png"/></a>
+
+## Key features
+
+- The most popular and trusted Angular open source dashboard template is out there. Used by hundreds of thousands developers worldwide and Fortune 500 companies*.
+- Over 40+ Angular Components and 60+ Usage Examples. Kick off your project and save money by using ngx-admin.
+- Already using ngx-admin and willing to switch to material theme? Material theme is backward-compatible. Check out the article describing how to do that.
+- ngx-admin material works perfectly with Angular Material and Nebular. Take the best from both!
+
+### To use material theme checkout `feat/material-theme` branch
+
+# Admin template based on Angular 9+ and <a href="https://github.com/akveo/nebular">Nebular</a>
+<a target="_blank" href="https://hubs.ly/H0n4Sw20"><img src="https://i.imgur.com/mFdqvgG.png"/></a>
+
+### Backend Integration Bundles
+Easy way to integrate ngx-admin with backend (.NET, Node.js, Java etc.).
+
+<a target="_blank" href="https://hubs.ly/H0n4ZxC0">
+  <img src="https://i.imgur.com/Ywbs8cl.png"/>
+</a>
+
+[Check out our Store](https://hubs.ly/H0n4Zvy0) for ready to use Backend Bundles.
+
+### With 6 stunning visual themes
 
 
-## Las siguientes son las condiciones para realizar la prueba:
+#### Material Dark
+<a target="_blank" href="https://hubs.ly/H0nxM3b0"><img src="https://i.imgur.com/67YAlhf.png"/></a>
 
-1. Tener cuenta en Github (gratis)
+#### Material Light
+<a target="_blank" href="https://hubs.ly/H0nxNmv0"><img src="https://i.imgur.com/aQzw0hD.png"/></a>
 
-2. Clonar el siguiente repositorio: HTTPS: https://github.com/LotoPuntoProject/FrontEndTest.git SSH:git@github.com:LotoPuntoProject/FrontEndTest.git
+#### Default
+<a target="_blank" href="https://hubs.ly/H0n4Tgv0"><img src="https://i.imgur.com/Kn3xDKQ.png"/></a>
 
-3. Crear branch donde será subido todo el código desarrollado. El nombre del branch será: {$nombre}_lotopunto ($nombre = PrimernombrePrimerapellido, ej: CarlosRuiz_lotopunto)
+#### Dark
+<a target="_blank" href="https://hubs.ly/H0n4Th20"><img src="https://i.imgur.com/FAn5iXY.png"/></a>
 
-4. Subir todo el codigo necesario para la compilacion correcta del aplicativo, asi como sus requerimientos y un README describiendo el orden de ejecucion.
+#### Cosmic
+<a target="_blank" href="https://hubs.ly/H0n4Tj80"><img src="https://i.imgur.com/iJu2YDF.png"/></a>
 
-5. El tiempo límite para subir el código funcional será de 24 horas a partir de la recepción del email con la prueba.
+#### Corporate
+<a target="_blank" href="https://hubs.ly/H0n4TDQ0"><img src="https://i.imgur.com/GpUt6NW.png"/></a>
 
-6. Adicionalmente a los requerimientos funcionales, se tendrá en cuenta: la presentación física del aplicativo (Estética, HTML, CSS), usabilidad y legibilidad en inglés (comentarios, indentación y organización) del código fuente, así como su robustez.
+### What's included:
 
-7. En el momento de evaluar se tendrá en cuenta el último “push” previo a concluir el plazo para subir el código.
+- Angular 9+ & Typescript
+- Bootstrap 4+ & SCSS
+- Responsive layout
+- RTL support
+- High resolution
+- Flexibly configurable themes with **hot-reload** (3 themes included)
+- Authentication module with multiple providers
+- 40+ Angular Components
+- 60+ Usage Examples
 
-8. Cualquier pregunta sobre esta prueba será dirigida y respondida vía email a raosoriom.lotopunto@gmail.com, en horario de 17 de Abril 5:00 PM a 11:00 PM y 18 de Abril 9:00 AM a 2:00 PM.
+### Demo
 
-9. Sólamente se revisará el desarrollo que se encuentre en el branch respectivo y antes que concluya el tiempo. No olvidar hacer push.
+<a target="_blank" href="https://hubs.ly/H0n4Tk70">Live Demo</a>
 
-10. Generar “Class Diagram” del código fuente y “Use Case Diagram” en versión UML 2.0 en idioma inglés (formato PDF). Subirlos [aqui:](https://docs.google.com/forms/d/1FAhqnX6IQ5Wgirs_he8SHZ5ux4ZBtUFNi9vPkITnLls/)
+## Documentation
+This template is using [Nebular](https://github.com/akveo/nebular) modules set, [here you can find documentation and other useful articles](https://hubs.ly/H0n4ZPt0).
 
+### Empty starter kit
+Don't need all the pages and modules and just looking for an empty starter kit for your next project? Check out our [starter-kit branch](https://github.com/akveo/ngx-admin/tree/starter-kit).
 
-## Requerimientos Funcionales FrontEnd
+## BrowserStack
+This project runs its tests on multiple desktop and mobile browsers using [BrowserStack](http://www.browserstack.com).
 
-Desarrollo de una aplicación web FrontEnd.
+<img src="https://cloud.githubusercontent.com/assets/131406/22254249/534d889e-e254-11e6-8427-a759fb23b7bd.png" height="40" />
 
-El desarrollador podrá usar cualquier framework para el desarrollo (React, Angular, Redux...).
+## More from Akveo
 
-El desarrollo estará basado en API_REST.
+- [Eva Icons](https://github.com/akveo/eva-icons) - 480+ beautiful Open Source icons
+- [Nebular](https://github.com/akveo/nebular) - Angular Components, Auth and Security
 
-Será un desarrollo local en el puerto 3000 localhost:3000
+### How can I support developers?
+- Star our GitHub repo :star:
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow us on [Twitter](https://twitter.com/akveo_inc) :feet:
+- Like our page on [Facebook](https://www.facebook.com/akveo/) :thumbsup:
 
-Se crearán 3 vistas explicadas a continuación:
+### Looking for engineering services? 
+Visit [our homepage](https://hubs.ly/H0n4YJt0) or simply leave us a message to [contact@akveo.com](mailto:contact@akveo.com). We will be happy to work with you!
 
-1) La primera será una vista de bienvenida (Sentirse libre y creativo a la hora de hacerla). Al usuario final se desplegará un cuadro de login con dos campos: usuario y contraseña. El cuadro de login tendrá dos botones:
-
-Sign up (click)-> llevará a la 2) vista
-
-Login (click)-> Validación de usuario y contraseña haciendo POST a localhost:3001/login y en el body la siguiente información: { "user": $user, "password": $password } Respuesta: 200 ok: Redirige a la vista 3)
-
-En caso de credenciales no válidas (equivalente a respuesta “404 not found”), se mostrará en pantalla un mensaje de usuario y/o contraseña incorrecta. El usuario podrá volver a intentar hacer Login.
-
-2) Una vista de registro donde se solicitará al usuario user, password y email. Esta vista tendrá un botón: Sign Up (click)-> Este botón recolecta la información solicitada y realiza post a localhost:3001/signup
-
-En el body ira la información recolectada en formato JSON. Respuesta: 200 ok: sign up exitoso y redirige a la vista 1) 400 bad Request: Error
-
-3) Una vista de login exitoso. Esta vista mostrará un mensaje en pantalla de login ejecutado correctamente, con la información recolectada al hacer un GET a localhost:3001/$user/info
-
-La información recolectada al hacer el GET debe ser mostrada en pantalla en esta vista y vendrá en formato JSON: { "user": string, "cash": int, "meta": list }
+### From Developers
+Made with :heart: by [Akveo team](https://hubs.ly/H0n4YwQ0). Follow us on [Twitter](https://twitter.com/akveo_inc) to get the latest news first!
+We're always happy to receive your feedback!
