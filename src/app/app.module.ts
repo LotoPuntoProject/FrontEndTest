@@ -71,7 +71,7 @@ import {UserService} from "./services/user.service";
             endpoint: '/login',
             requireValidToken: false,
             redirect: {
-              success: '/Bienvenida/',
+              success: '/Bienvenida',
               failure: null, // stay on the same page
             },
           },
@@ -79,7 +79,7 @@ import {UserService} from "./services/user.service";
             endpoint: '/signup',
             requireValidToken: false,
             redirect: {
-              success: '/Bienvenida/',
+              success: '/Bienvenida',
               failure: null, // stay on the same page
             },
           },
@@ -91,7 +91,7 @@ import {UserService} from "./services/user.service";
           strategy: 'user',  // strategy id key.
           rememberMe: false,   // whether to show or not the `rememberMe` checkbox
           showMessages: {     // show/not show success/error messages
-            success: true,
+            success: false,
             error: true,
           },
         },
@@ -99,9 +99,9 @@ import {UserService} from "./services/user.service";
           strategy: 'user',  // strategy id key.
           rememberMe: false,   // whether to show or not the `rememberMe` checkbox
           showMessages: {     // show/not show success/error messages
-            success: true,
+            success: false,
             error: true,
-          },
+          },  
           terms: false,
         },
       },

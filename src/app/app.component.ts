@@ -12,11 +12,13 @@ import { SeoService } from './@core/utils/seo.service';
   template: '<router-outlet></router-outlet>',
 })
 export class AppComponent implements OnInit {
+  router: any;
 
   constructor(private analytics: AnalyticsService, private seoService: SeoService) {
   }
 
   ngOnInit(): void {
+    this.router.navigate(['/Bienvhttp://localhost:3000/Bienvenida/']);
     this.analytics.trackPageViews();
     this.seoService.trackCanonicalChanges();
   }

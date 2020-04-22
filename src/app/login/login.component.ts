@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NbLoginComponent } from '@nebular/auth';
+import { Component, OnInit } from '@angular/core';
+import { NbLoginComponent, NbAuthJWTToken } from '@nebular/auth';
 
 @Component({
   selector: 'ngx-login',
@@ -9,4 +9,3 @@ import { NbLoginComponent } from '@nebular/auth';
 export class NgxLoginComponent extends NbLoginComponent {
 
 }
-
