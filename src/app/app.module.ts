@@ -69,6 +69,7 @@ import {UserService} from "./services/user.service";
           baseEndpoint: 'http://localhost:3001',
           login: {
             endpoint: '/login',
+            requireValidToken: false,
             redirect: {
               success: '/Bienvenida/',
               failure: null, // stay on the same page
@@ -76,6 +77,7 @@ import {UserService} from "./services/user.service";
           },
           register: {
             endpoint: '/signup',
+            requireValidToken: false,
             redirect: {
               success: '/Bienvenida/',
               failure: null, // stay on the same page
