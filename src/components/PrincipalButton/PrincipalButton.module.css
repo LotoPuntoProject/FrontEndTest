@@ -1,0 +1,16 @@
+/*
+Archivo css standar
+
+*/
+.principalButton, .buttonLogin {
+    background: linear-gradient(90deg, #FFB438 45.3%, #FFB838 70.16%, #FFC338 93.2%);
+    borderRadius: 30;
+    border: 0;
+    color: Black;
+}
+
+.buttonLogin {
+    width: 343px;
+    height: 52px;
+    margin-top: 16px;
+}
