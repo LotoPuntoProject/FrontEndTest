@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { createHashHistory } from 'history';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import classes from './App.module.css';
+
+import LoginPage from './views/login/loginPage';
+import HomePage from "./views/home/homePage";
+import LogOut from "./views/logout/logout";
+import AutoLogin from "./views/autoLogin/autoLogin";
+
+export const history = createHashHistory();
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main: '#FFC338'
+        }
+    }
+});
+
+const App = ({history}) =>
+   (
+       <MuiThemeProvider theme={theme}>
+           <div className={classes.page_container}>
+               <BrowserRouter>
+                   <Switch>
+
+                       <Route exact path="/home" component={HomePage} />
+                       <Route exact path="/" component={LoginPage} />
+                       <Route exact path="/login" component={LoginPage} />
+                       <Route exact path="/logout" component={LogOut} />
+                       <Route exact path="/autologin/:url" component={AutoLogin} />
+                   </Switch>
+               </BrowserRouter>
+            </div>
+       </MuiThemeProvider>
   );
-}
 
 export default App;
+
