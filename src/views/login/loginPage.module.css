@@ -3,6 +3,10 @@
     align-items: center;
 }
 
-.loginForm{
+.topContainer{
+    height: 50%;
+}
 
+.bottonContainer{
+    height: 50%;
 }

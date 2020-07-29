@@ -1,0 +1,12 @@
+.container{
+    background-size: cover;
+    display: flex;
+    width: 160px;
+    height: 160px;
+}
+.happy{
+    background-image: url("../../assets/img/assistant/happy.png");
+}
+.reader{
+    background-image: url("../../assets/img/assistant/reader.png");
+}

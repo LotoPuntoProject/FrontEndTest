@@ -3,3 +3,10 @@
     width: 201px;
     border-radius: 20px !important;
 }
+.divier{
+    height: 50%;
+}
+.tooltip{
+    display: inline-block;
+}
+

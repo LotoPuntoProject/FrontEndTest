@@ -1,13 +1,12 @@
-import React,{ useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 
 
-
-const AutoLogin = (props) => {
+const AutoLogin = () => {
     let { url } = useParams();
     useEffect(() => {
-        axios.get('http://'+url+'/rasberry').then((response) => {
+        axios.get('http://'+url+'/api/machine/autologin/').then((response) => {
             // Respuesta del servidor
             sessionStorage.setItem("TOKEN", response.data.authorizationToken);
             sessionStorage.setItem("AUTH_ITEMS", JSON.stringify(response.data.permissions));
@@ -18,16 +17,7 @@ const AutoLogin = (props) => {
             console.log(e);
         });
     })
-
-
-
-    return (
-        <div className="autoLogin" >
-
-
-
-        </div>
-    );
+    return(null);
 }
 
 export default AutoLogin;

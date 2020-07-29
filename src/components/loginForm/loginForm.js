@@ -20,8 +20,6 @@ const LoginForm = (props) => {
     let [email, setEmail] = useState("");
     let [password, setPassword] = useState("");
 
-
-
     function login(e) {
         e.preventDefault();
         axios.post(baseUrl+'/login', {
@@ -44,7 +42,7 @@ const LoginForm = (props) => {
                 <form  id="login">
                 <Grid container direction="column" alignItems="center" spacing={2}>
                         <Grid item>
-                            { props.withLogo && <Logo width="247"/> }
+                                { props.withLogo && <Logo width="247"/> }
                         </Grid>
                         <Grid item>
                             <FormControl variant="outlined" id="userNameInput" className={classes.loginInput}>

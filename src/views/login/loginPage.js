@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import LoginForm from "../../components/loginForm/loginForm";
 
 
-const LoginPage = (props) => {
+const LoginPage = () => {
     return (
         <Grid container direction="row" alignItems="center">
             <Grid container direction="column" alignItems="center">

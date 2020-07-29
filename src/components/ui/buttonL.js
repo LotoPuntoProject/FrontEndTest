@@ -6,7 +6,7 @@ import classes from './buttonL.module.css';
 
 const ButtonL = (props) => {
     return (
-        <Button variant="contained" className={[props.class, classes.lotoButton].join(" ")} onClick={ props.action ? (ev)=>props.action(ev) : console.log('add prop function')}>
+        <Button variant="contained" className={[props.class, classes.lotoButton].join(" ")} onClick={ props.action ? (ev)=>props.action(ev) : console.log('You can add prop function')}>
             <span className={props.clastText}>
                 {props.children}
             </span>

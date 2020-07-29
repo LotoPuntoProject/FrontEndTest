@@ -26,7 +26,6 @@ const App = ({history}) =>
            <div className={classes.page_container}>
                <BrowserRouter>
                    <Switch>
-
                        <Route exact path="/home" component={HomePage} />
                        <Route exact path="/" component={LoginPage} />
                        <Route exact path="/login" component={LoginPage} />
